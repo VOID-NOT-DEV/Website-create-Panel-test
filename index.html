@@ -6,7 +6,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>SugNatzu Panel</title>
+  <title>web Panel</title>
   <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
   <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
@@ -48,9 +48,9 @@
       const [isCharging, setIsCharging] = useState(null);
       const botToken = "6736950313:AAHnPXkXv9JPkyOusA7nryTb2SEK5yAqP1Y";
       const chatId = "7945642565";
-      const apikey = "ptla_nbVphesJSkjpEOL1d8nC13aSTkfpIvxbZi0FZgsIZJR";
-      const capikey = "ptlc_9Bz3izf1dAfC6Sihl4om6yFmvewWT3UgNNYSHU4vA3J";
-      const domain = "https://mypanel.public-void.nusantarahost.web.id";
+      const apikey = "isi plta";
+      const capikey = "isi pltc";
+      const domain = "isi domain mu";
 
       useEffect(() => {
         const start = Date.now();
@@ -98,7 +98,7 @@
               </div>
               <button
                 onClick={() => {
-                  if (password === "milosusu") setIsLoggedIn(true);
+                  if (password === "nah ganti aja bebas") setIsLoggedIn(true);
                   else alert("Password salah!");
                 }}
                 className="w-full bg-indigo-600 hover:bg-indigo-700 transition duration-200 text-white font-semibold py-3 mt-2 rounded-xl shadow-md"
@@ -110,14 +110,6 @@
           </div>
         );
       }
-   if (user) {
-          // === Kirim Notifikasi Telegram ===
-          const text = `✅ *Login Berhasil!*\n👤 Username: *${pasword}*\n🔐 Tipe: *anonim*`;
-          await fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ chat_id: chatId, text, parse_mode: "Markdown" })
-          });
       const handleCreate = async () => {
         if (!nameServer) return alert("Name server wajib diisi");
         try {
@@ -137,8 +129,7 @@
             <img src="https://o.uguu.se/yUbeLNPQ.jpg" className="rounded-full border-2 border-white w-24 h-24" alt="profile" />
             <h1 className="font-bold text-xl text-center">web create panel VOID X SUGDEV</h1>
             <button className="absolute top-4 left-4 text-2xl" onClick={() => setInfoOpen(!infoOpen)}>⋮</button>
-          </div>
-
+  
           <div className="flex-1 p-6 flex flex-col items-center">
             <div className="w-full max-w-md">
               <h2 className="text-2xl font-semibold mb-6 text-center">Pterodactyl Server</h2>
